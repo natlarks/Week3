@@ -21,7 +21,8 @@ You will see Internet Explorer popped up with a form that was submitted.
 # Run-through
 
 The first part of our script creates the website in the folder for localhost and populates it with HTML
-  `New-Item C:\inetpub\wwwroot\index.html -type file
+ 
+ `New-Item C:\inetpub\wwwroot\index.html -type file
   echo '<html>
 
     <form action="#">
@@ -34,7 +35,7 @@ The first part of our script creates the website in the folder for localhost and
       <input id="upload" type="submit" value="Submit">
     </form>
 
-  </html>'  > C:\inetpub\wwwroot\index.html`
+  </html>'  > C:\inetpub\wwwroot\index.html'`
   
 It then Opens up Internet Explorer to go to localhost
   `$ie = New-Object -Com "InternetExplorer.Application"
